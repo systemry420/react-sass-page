@@ -1,0 +1,58 @@
+@use '../_variables.scss' as *;
+
+.nav {
+    background-color: $bg-primary;
+    padding: .6em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > img {
+        margin-right: 10em;
+    }
+
+    .nav-content {
+        flex: 3;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        form {
+            background-color: $bg-secondary;
+            border-radius: 5px;
+            
+            select, input, button {
+                background-color: transparent;
+                color: $label;
+                border: none;
+                outline: none;
+                padding: .4em;
+            }
+    
+            select {
+                border-radius: 5px 0 0 5px;
+                border-right: 2px solid $label;
+            }
+            
+            input {
+                border-right: 2px solid $label;
+            }
+        }
+    
+        button.upload-btn {
+            background-color: $bg-secondary;
+            color: $label;
+            border: 1px solid $label;
+            outline: none;
+            padding: .4em;
+            border-radius: 7px;
+        }
+
+        .info {
+            img {
+                margin-left: 2em;
+                width: 40px;
+            }
+        }
+    }
+}
