@@ -4,24 +4,32 @@
 .sidebar-left {
     min-height: 100vh;
     background-color: $bg-primary;
-    max-width: 300px;
-    padding: 1em;
+    max-width: 250px;
+    padding: .2em .5em;
 
     .links {
         @include horizontal-list;
 
         .link {
-            
-            margin: 1em;
+            margin: 1em .5em;
             
             a {
                 display: flex;
                 color: $label;
                 align-items: center;
                 text-decoration: none;
+                padding: .7em;
+                border-radius: 10px;
 
                 .icon {
-                    
+                    margin-right: 1.2em;
+
+                }
+
+                &:hover, &.active {
+                    background-color: $primary-dark;
+                    color: $accent;
+                    font-weight: bold;
                 }
             }
         }

@@ -6,10 +6,10 @@ const LeftSidebar = () => {
   return (
     <div className='sidebar-left'>
       <ul className='links'>
-        {links.map(link => {
+        {links.map((link, idx) => {
           return (
             <li className='link'>
-              <a href={link.text}>
+              <a href={link.text} className={idx === 0 ? 'active': ''}>
                 <span className='icon'>{link.icon}</span>
                 <span>{link.text}</span>
               </a>
@@ -17,6 +17,7 @@ const LeftSidebar = () => {
           )
         })}
       </ul>
+      <hr />
     </div>
   )
 }
