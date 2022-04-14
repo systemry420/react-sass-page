@@ -1,9 +1,10 @@
-@use '../variables' as *;
+@use '../variables'as *;
 
 .section {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .section-center {
         margin: 0 auto;
         margin-top: 4rem;
@@ -13,7 +14,7 @@
         text-align: center;
         position: relative;
         display: flex;
-        
+
         article {
             position: absolute;
             top: 0;
@@ -28,21 +29,21 @@
                 height: 100%;
             }
         }
-        
+
         article.activeSlide {
             opacity: 1;
             transform: translateX(0) scale(1.15);
             z-index: 1;
         }
-        
+
         article.lastSlide {
             transform: translateX(-112%);
         }
-        
+
         article.nextSlide {
             transform: translateX(112%);
         }
-    
+
     }
 
     .buttons {
@@ -54,6 +55,7 @@
 
         .circle {
             margin: 0 .8em;
+
             &.active {
                 color: $primary;
             }
@@ -69,11 +71,11 @@
             margin: 0 1em;
             color: $primary;
         }
-        
+
         .prev {
             left: 0;
         }
-    
+
         .next {
             right: 0;
         }
@@ -81,21 +83,23 @@
 }
 
 
-@media (min-width: 800px) {
-    .section-center {
-        margin: 0 auto;
-        margin-top: 4rem;
-        width: 80vw;
-    }
-    .text {
-        max-width: 45em;
-    }
+@media (max-width: 800px) {
+    .section {
+        .section-center {
+            margin: 0 auto;
+            margin-top: 4rem;
+            width: 80vw;
+        }
 
-    .prev,
-    .next {
-        width: 2rem;
-        height: 2rem;
-        font-size: 1.5rem;
+        .text {
+            max-width: 45em;
+        }
+
+        .prev,
+        .next {
+            width: 2rem;
+            height: 2rem;
+            font-size: 1.5rem;
+        }
     }
 }
-

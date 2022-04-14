@@ -3,6 +3,7 @@ import EventsSidebar from './EventsSidebar'
 import LeftSidebar from './LeftSidebar'
 import Carousel from './Carousel'
 import "../styles/layout/main.scss";
+import Stories from './Stories';
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
       {/* <LeftSidebar /> */}
 
       <Carousel />
+      <Stories />
       {/* <EventsSidebar /> */}
     </div>
   )
