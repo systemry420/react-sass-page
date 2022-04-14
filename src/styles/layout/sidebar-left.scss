@@ -1,0 +1,29 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.sidebar-left {
+    min-height: 100vh;
+    background-color: $bg-primary;
+    max-width: 300px;
+    padding: 1em;
+
+    .links {
+        @include horizontal-list;
+
+        .link {
+            
+            margin: 1em;
+            
+            a {
+                display: flex;
+                color: $label;
+                align-items: center;
+                text-decoration: none;
+
+                .icon {
+                    
+                }
+            }
+        }
+    }
+}

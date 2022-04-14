@@ -1,11 +1,11 @@
 import React from 'react'
 import EventsSidebar from './EventsSidebar'
-import RightSidebar from './RightSidebar'
+import LeftSidebar from './LeftSidebar'
 
 const Main = () => {
   return (
     <>
-      <RightSidebar />
+      <LeftSidebar />
       <EventsSidebar />
     </>
   )
