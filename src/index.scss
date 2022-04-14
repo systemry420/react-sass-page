@@ -1,7 +1,10 @@
-@import './styles/_variables.scss';
-@import './styles/_breakpoints.scss';
-@import './styles/_mixins.scss';
-@import './styles/_typography.scss';
+@use './styles/_variables.scss';
+@use './styles/_breakpoints.scss';
+@use './styles/_mixins.scss';
+@use './styles/_typography.scss';
+
+@use './styles/layout/sidebar-right.scss';
+@use "./styles/layout/sidebar-left.scss";
 
 * {
   margin: 0;
@@ -18,3 +21,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.sidebar-right {
+
+}

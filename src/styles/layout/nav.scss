@@ -49,6 +49,10 @@
         }
 
         .info {
+            display: flex;
+            align-items: center;
+            color: $label;
+            font-size: 1.2em;
             img {
                 margin-left: 2em;
                 width: 40px;

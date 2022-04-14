@@ -7,7 +7,7 @@ import './index.scss'
 function App() {
   return (
     <div className="App">
-      <Nav />
+      {/* <Nav /> */}
       <Main />
     </div>
   );

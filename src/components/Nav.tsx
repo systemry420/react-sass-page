@@ -2,10 +2,13 @@ import React from 'react'
 import '../styles/layout/nav.scss'
 import logo from '../assets/images/logo.png'
 import profile from '../assets/images/Ellipse 2.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBell } from '@fortawesome/free-solid-svg-icons'
+
 
 const Nav = () => {
   return (
-    <div className='nav'>
+    <nav className='nav'>
       <img src={logo} alt='logo' />
         <div className='nav-content'>
           <div>
@@ -26,11 +29,11 @@ const Nav = () => {
             <button className='upload-btn'>Upload Video</button>
           </div>
           <div className='info'>
-            <img src={profile} alt='profile' />
+            <FontAwesomeIcon icon={faBell} />
             <img src={profile} alt='profile' />
           </div>
       </div>
-    </div>
+    </nav>
   )
 }
 
