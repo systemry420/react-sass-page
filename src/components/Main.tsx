@@ -1,8 +1,13 @@
 import React from 'react'
+import EventsSidebar from './EventsSidebar'
+import RightSidebar from './RightSidebar'
 
 const Main = () => {
   return (
-    <div>Main</div>
+    <>
+      <RightSidebar />
+      <EventsSidebar />
+    </>
   )
 }
 
