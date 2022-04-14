@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faChevronLeft, faChevronRight
+  faChevronLeft, faChevronRight, faCircle
 } from '@fortawesome/free-solid-svg-icons'
 import image1 from '../assets/images/Rectangle 10.png'
 import image2 from '../assets/images/Rectangle 11.png'
@@ -35,14 +35,14 @@ const Carousel = () => {
     }
   }, [index, images]);
 
-  useEffect(() => {
-    let slider = setInterval(() => {
-      setIndex(index + 1);
-    }, 5000);
-    return () => {
-      clearInterval(slider);
-    };
-  }, [index]);
+  // useEffect(() => {
+  //   let slider = setInterval(() => {
+  //     setIndex(index + 1);
+  //   }, 5000);
+  //   return () => {
+  //     clearInterval(slider);
+  //   };
+  // }, [index]);
 
   return (
     <section className="section">
@@ -71,6 +71,11 @@ const Carousel = () => {
         <button className="prev" onClick={() => setIndex(index - 1)}>
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
+        {images.map((image, idx) => (
+          <span className={`circle ${index === idx ? 'active': ''}`}>
+            <FontAwesomeIcon icon={faCircle} />
+          </span>
+        ))}
         <button className="next" onClick={() => setIndex(index + 1)}>
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
