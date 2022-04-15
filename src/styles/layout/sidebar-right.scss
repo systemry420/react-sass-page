@@ -1,0 +1,46 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.sidebar-right {
+    min-height: 100vh;
+    background-color: $bg-primary;
+    max-width: 330px;
+    padding: 2em .5em;
+
+    h1 {
+        color: $accent;
+    }
+
+    .events {
+        width: 99%;
+        
+        .event {
+            position: relative;
+            margin: 2em 1em;
+            
+            .info {
+                position: absolute;
+                border-radius: 12px;
+                top: 0;
+                left: 0;
+                height: 98%;
+                width: 105%;
+                z-index: 3;
+                background-color: rgba(0, 0, 0, 0.8);
+                color: $accent;
+            }            
+        }
+    }
+
+    .pinned {
+        color: $label;
+        width: 100%;
+        height: 150px;
+        border: 1px solid $label;
+        border-radius: 12px;
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}

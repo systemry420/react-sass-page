@@ -6,17 +6,19 @@ import "../styles/layout/main.scss";
 import Stories from './Stories';
 import Recommended from './Recommended';
 import TopCategories from './TopCategories';
+import Other from './Other';
 
 const Main = () => {
   return (
     <main className='main'>
       {/* <LeftSidebar /> */}
 
-      <Carousel />
-      <Stories />
+      {/* <Carousel /> */}
+      {/* <Stories /> */}
       {/* <Recommended /> */}
-      <TopCategories />
-      {/* <EventsSidebar /> */}
+      {/* <TopCategories /> */}
+      {/* <Other /> */}
+      <EventsSidebar />
     </main>
   )
 }
