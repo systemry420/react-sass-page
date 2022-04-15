@@ -1,0 +1,33 @@
+@use '../variables'as *;
+
+section {
+    width: 80vw;
+    padding: 1em;
+    
+    .videos {
+        display: flex;
+        flex-wrap: wrap;
+        .video {
+            padding: .3em;
+            margin: .3em;
+
+            .caption {
+                color: $accent;
+                font-weight: bold;
+            }
+
+            .info {
+                display: flex;
+                justify-content: space-between;
+
+                .username {
+                    color: $primary
+                }
+
+                .views {
+                    color: $label;
+                }
+            }
+        }
+    }
+}

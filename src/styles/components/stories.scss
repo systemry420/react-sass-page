@@ -9,7 +9,7 @@ section {
 
     .stories {
         display: flex;
-        overflow: scroll;
+        overflow: hidden;
     
         .story {
             padding: 1em;
