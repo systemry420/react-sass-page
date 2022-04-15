@@ -35,7 +35,7 @@ const Stories = () => {
     }
   ])
   return (
-    <section>
+    <section className='stories-section'>
       <h1>Top Talents</h1>
       <div className='stories'>
         {stories.map(story => {

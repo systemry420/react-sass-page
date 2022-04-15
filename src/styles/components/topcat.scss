@@ -1,22 +1,23 @@
 @use '../variables'as *;
 
 section.top-cats {
-    width: 80vw;
-    padding: 1em;
+    width: 100%;
+    margin-top: 1em;
     
     .categories {
+        padding: 1em;
         display: flex;
         overflow: hidden;
         .category {
             position: relative;
-            margin: 0 1em;
+            margin: 0 .5em;
 
             .info {
                 position: absolute;
-                top: 136px;
+                top: 145px;
                 border-radius: 0 0 8px 8px;
                 width: 100%;
-                z-index: 3;
+                // z-index: 3;
                 background-color: rgba(0, 0, 0, 0.7);
 
                 .caption {

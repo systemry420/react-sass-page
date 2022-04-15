@@ -38,8 +38,8 @@ const TopCategories = () => {
                         <div className='category'>
                             <img src={cat.image} alt='' />
                             <p className='info'>
-                                <h3 className='caption'>{cat.caption}</h3>
-                                <h4 className='views'>{cat.views} views</h4>
+                                <h4 className='caption'>{cat.caption}</h4>
+                                <h5 className='views'>{cat.views} views</h5>
                             </p>
                         </div>
                     )
@@ -49,8 +49,8 @@ const TopCategories = () => {
                         <div className='category'>
                             <img src={cat.image} alt='' />
                             <div className='info'>
-                                <h3 className='caption'>{cat.caption}</h3>
-                                <h4 className='views'>{cat.views} views</h4>
+                                <h4 className='caption'>{cat.caption}</h4>
+                                <h5 className='views'>{cat.views} views</h5>
                             </div>
                         </div>
                     )

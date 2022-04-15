@@ -4,8 +4,9 @@
 .sidebar-right {
     min-height: 100vh;
     background-color: $bg-primary;
-    max-width: 330px;
-    padding: 2em .5em;
+    width: 25%;
+    padding: 1em .3em;
+    z-index: 3;
 
     h1 {
         color: $accent;
@@ -16,17 +17,19 @@
         
         .event {
             position: relative;
-            margin: 2em 1em;
-            
+            margin: 1em;
+
+            img {
+                max-width: 100%;
+            }
+
             .info {
                 position: absolute;
-                border-radius: 12px;
-                top: 0;
-                left: 0;
-                height: 98%;
-                width: 105%;
+                top: 50px;
+                border-radius: 0 0 8px 8px;
+                width: 100%;
                 z-index: 3;
-                background-color: rgba(0, 0, 0, 0.8);
+                padding: .5em;
                 color: $accent;
             }            
         }
@@ -36,11 +39,19 @@
         color: $label;
         width: 100%;
         height: 150px;
-        border: 1px solid $label;
+        border: 2px dashed $label;
         border-radius: 12px;
         padding: 1em;
         display: flex;
         align-items: center;
         text-align: center;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-evenly;
+        color: $primary;
+        font-size: 1.4em;
+        margin: 1em 0;
     }
 }

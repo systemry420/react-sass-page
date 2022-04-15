@@ -3,7 +3,7 @@ import '../styles/layout/nav.scss'
 import logo from '../assets/images/logo.png'
 import profile from '../assets/images/Ellipse 2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBell } from '@fortawesome/free-solid-svg-icons'
+import { faBell, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 
 const Nav = () => {
@@ -21,7 +21,9 @@ const Nav = () => {
 
                 <input type='search' placeholder='Search' />
 
-                <button>S</button>
+                <button>
+                  <FontAwesomeIcon icon={faSearch} />
+                </button>
               </div>
             </form>
           </div>

@@ -4,8 +4,9 @@
 .sidebar-left {
     min-height: 100vh;
     background-color: $bg-primary;
-    max-width: 250px;
+    width: 15%;
     padding: .2em .5em;
+    z-index: 3;
 
     .links {
         @include horizontal-list;

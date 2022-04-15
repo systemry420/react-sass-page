@@ -34,17 +34,17 @@ const Recommended = () => {
         }
     ])
     return (
-        <section>
+        <section className='recommended'>
             <h1>Recommended For You</h1>
             <div className='videos'>
                 {videos.map(video => {
                     return (
                         <div className='video'>
                             <img src={video.image} alt={video.name} />
-                            <h3 className='caption'>{video.caption}</h3>
+                            <h4 className='caption'>{video.caption}</h4>
                             <p className='info'>
-                                <h4 className='username'>{video.name}</h4>
-                                <h4 className='views'>{video.views} views</h4>
+                                <h5 className='username'>{video.name}</h5>
+                                <h5 className='views'>{video.views} views</h5>
                             </p>
                         </div>
                     )
@@ -53,10 +53,10 @@ const Recommended = () => {
                     return (
                         <div className='video'>
                             <img src={video.image} alt={video.name} />
-                            <h3 className='caption'>{video.caption}</h3>
+                            <h4 className='caption'>{video.caption}</h4>
                             <p className='info'>
-                                <h4 className='username'>{video.name}</h4>
-                                <h4 className='views'>{video.views} views</h4>
+                                <h5 className='username'>{video.name}</h5>
+                                <h5 className='views'>{video.views} views</h5>
                             </p>
                         </div>
                     )

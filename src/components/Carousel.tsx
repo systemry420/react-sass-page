@@ -45,7 +45,7 @@ const Carousel = () => {
   // }, [index]);
 
   return (
-    <section className="section">
+    <section className="carousel">
       <div className="section-center">
         {images.map((image, imageIndex) => {
 

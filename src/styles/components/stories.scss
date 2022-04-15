@@ -1,7 +1,7 @@
 @use '../variables'as *;
 
 section {
-    width: 80vw;
+    width: 100%;
     padding: 1em;
     h1 {
         color: $accent;
@@ -13,11 +13,12 @@ section {
     
         .story {
             padding: 1em;
-            margin: 1.5em;
+            margin: .5em;
             text-align: center;
+            font-size: .8em;
     
             img {
-                width: 90px;
+                width: 80px;
             }
             
             .username {

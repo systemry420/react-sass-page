@@ -7,18 +7,16 @@ import Stories from './Stories';
 import Recommended from './Recommended';
 import TopCategories from './TopCategories';
 import Other from './Other';
+import Nav from './Nav';
 
 const Main = () => {
   return (
-    <main className='main'>
-      {/* <LeftSidebar /> */}
-
-      {/* <Carousel /> */}
-      {/* <Stories /> */}
-      {/* <Recommended /> */}
-      {/* <TopCategories /> */}
-      {/* <Other /> */}
-      <EventsSidebar />
+    <main className='container'>
+        <Carousel />
+        <Stories />
+        <Recommended />
+        <TopCategories />
+        <Other />
     </main>
   )
 }

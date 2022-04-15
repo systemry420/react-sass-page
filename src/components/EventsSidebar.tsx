@@ -4,6 +4,10 @@ import image2 from "../assets/images/Rectangle 35.png";
 import image3 from "../assets/images/Rectangle 36.png";
 import image4 from "../assets/images/Rectangle 37.png";
 import "../styles/layout/sidebar-right.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { 
+  faPlay, faForward, faBackward, faVolumeHigh, faTimes
+ } from '@fortawesome/free-solid-svg-icons'
 
 const EventsSidebar = () => {
 
@@ -38,8 +42,8 @@ const EventsSidebar = () => {
             <div className='event'>
               <img src={event.image} alt={event.name} />
               <p className='info'>
-                <h2 className='username'>{event.name}</h2>
-                <h3 className='caption'>{event.caption}</h3>
+                <h3 className='username'>{event.name}</h3>
+                <h4 className='caption'>{event.caption}</h4>
               </p>
             </div>
           )
@@ -48,6 +52,23 @@ const EventsSidebar = () => {
       <h1>Pinned Video</h1>
       <div className='pinned'>
         You can pin video here and continue your browsing
+      </div>
+      <div className='buttons'>
+        <span>
+          <FontAwesomeIcon icon={faVolumeHigh} />
+        </span>
+        <span>
+          <FontAwesomeIcon icon={faBackward} />
+        </span>
+        <span>
+          <FontAwesomeIcon icon={faPlay} />
+        </span>
+        <span>
+          <FontAwesomeIcon icon={faForward} />
+        </span>
+        <span>
+          <FontAwesomeIcon icon={faTimes} />
+        </span>
       </div>
     </section>
   )
