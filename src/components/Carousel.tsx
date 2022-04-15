@@ -68,17 +68,17 @@ const Carousel = () => {
         })}
       </div>
       <div className='buttons'>
-        <button className="prev" onClick={() => setIndex(index - 1)}>
+        <span className="prev" onClick={() => setIndex(index - 1)}>
           <FontAwesomeIcon icon={faChevronLeft} />
-        </button>
+        </span>
         {images.map((image, idx) => (
           <span className={`circle ${index === idx ? 'active': ''}`}>
             <FontAwesomeIcon icon={faCircle} />
           </span>
         ))}
-        <button className="next" onClick={() => setIndex(index + 1)}>
+        <span className="next" onClick={() => setIndex(index + 1)}>
           <FontAwesomeIcon icon={faChevronRight} />
-        </button>
+        </span>
       </div>
     </section>
   );

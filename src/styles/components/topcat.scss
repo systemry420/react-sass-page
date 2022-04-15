@@ -1,0 +1,33 @@
+@use '../variables'as *;
+
+section.top-cats {
+    width: 80vw;
+    padding: 1em;
+    
+    .categories {
+        display: flex;
+        overflow: hidden;
+        .category {
+            position: relative;
+            margin: 0 1em;
+
+            .info {
+                position: absolute;
+                top: 136px;
+                border-radius: 0 0 8px 8px;
+                width: 100%;
+                z-index: 3;
+                background-color: rgba(0, 0, 0, 0.7);
+
+                .caption {
+                    color: $accent;
+                    font-weight: bold;
+                }
+
+                .views {
+                    color: $label;
+                }
+            }
+        }
+    }
+}

@@ -5,6 +5,7 @@ import Carousel from './Carousel'
 import "../styles/layout/main.scss";
 import Stories from './Stories';
 import Recommended from './Recommended';
+import TopCategories from './TopCategories';
 
 const Main = () => {
   return (
@@ -13,7 +14,8 @@ const Main = () => {
 
       <Carousel />
       <Stories />
-      <Recommended />
+      {/* <Recommended /> */}
+      <TopCategories />
       {/* <EventsSidebar /> */}
     </main>
   )
