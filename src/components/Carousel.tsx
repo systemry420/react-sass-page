@@ -35,14 +35,14 @@ const Carousel = () => {
     }
   }, [index, images]);
 
-  // useEffect(() => {
-  //   let slider = setInterval(() => {
-  //     setIndex(index + 1);
-  //   }, 5000);
-  //   return () => {
-  //     clearInterval(slider);
-  //   };
-  // }, [index]);
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 4000);
+    return () => {
+      clearInterval(slider);
+    };
+  }, [index]);
 
   return (
     <section className="carousel">
@@ -72,7 +72,7 @@ const Carousel = () => {
           <FontAwesomeIcon icon={faChevronLeft} />
         </span>
         {images.map((image, idx) => (
-          <span className={`circle ${index === idx ? 'active': ''}`}>
+          <span onClick={() => setIndex(idx)} className={`circle ${index === idx ? 'active': ''}`}>
             <FontAwesomeIcon icon={faCircle} />
           </span>
         ))}

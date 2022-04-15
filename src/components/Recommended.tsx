@@ -41,10 +41,10 @@ const Recommended = () => {
                     return (
                         <div className='video'>
                             <img src={video.image} alt={video.name} />
-                            <h4 className='caption'>{video.caption}</h4>
+                            <h5 className='caption'>{video.caption}</h5>
                             <p className='info'>
-                                <h5 className='username'>{video.name}</h5>
-                                <h5 className='views'>{video.views} views</h5>
+                                <h6 className='username'>{video.name}</h6>
+                                <h6 className='views'>{video.views} views</h6>
                             </p>
                         </div>
                     )
@@ -53,10 +53,10 @@ const Recommended = () => {
                     return (
                         <div className='video'>
                             <img src={video.image} alt={video.name} />
-                            <h4 className='caption'>{video.caption}</h4>
+                            <h5 className='caption'>{video.caption}</h5>
                             <p className='info'>
-                                <h5 className='username'>{video.name}</h5>
-                                <h5 className='views'>{video.views} views</h5>
+                                <h6 className='username'>{video.name}</h6>
+                                <h6 className='views'>{video.views} views</h6>
                             </p>
                         </div>
                     )

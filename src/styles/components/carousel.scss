@@ -56,6 +56,7 @@
 
         .circle {
             margin: 0 .8em;
+            cursor: pointer;
 
             &.active {
                 color: $primary;
