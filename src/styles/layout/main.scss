@@ -1,0 +1,12 @@
+@use '../variables'as *;
+
+.main {
+    // width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $bg-secondary;
+}

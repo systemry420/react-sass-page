@@ -7,13 +7,13 @@ import Stories from './Stories';
 
 const Main = () => {
   return (
-    <div className='main'>
+    <main className='main'>
       {/* <LeftSidebar /> */}
 
       <Carousel />
       <Stories />
       {/* <EventsSidebar /> */}
-    </div>
+    </main>
   )
 }
 
